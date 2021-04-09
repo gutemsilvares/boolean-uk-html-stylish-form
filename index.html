@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello Boolean!</h1>
+      <form action="post" method="post">
+        <div class="txt-field">
+          <label for="name">Your Name</label><br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="txt-field">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter your email address"
+          />
+        </div>
+
+        <div class="txt-field">
+          <label for="services">Needed Services</label>
+          <select name="services" id="services">
+            <option value="select">Choose Services</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Product Designer</option>
+            <option value="designer">UI Designer</option>
+          </select>
+        </div>
+
+        <div class="txt-field">
+          <label for="budget">Budgets</label>
+          <select name="budgets" id="">
+            <option value="select">Select Budget</option>
+            <option value="games">Games</option>
+            <option value="videos">Videos</option>
+            <option value="hardwares">Hardwares</option>
+          </select>
+        </div>
+
+        <div class="txt-field">
+          <label for="message">Message</label>
+          <label for="message"></label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Your message here"
+          ></textarea>
+        </div>
+        <input type="submit" value="Submit" /><i
+          class="fas fa-chevron-right"
+        ></i>
+      </form>
+    </div>
+    <!-- /.container -->
+  </body>
+</html>
